@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+	<bean class="com.amazon.employee.Address" id="address">
+		<constructor-arg value="BLR"/>
+		<constructor-arg value="Karnataka"/>
+		<constructor-arg value="India"/>
+	</bean>
+	
+	<bean class="com.amazon.employee.Department" id="department">
+		<constructor-arg value="501"/>
+		<constructor-arg value="engineering"/>
+	</bean>
+	
+	<bean class="com.amazon.employee.Employee" id="employee">
+		<constructor-arg value="101"/>
+		<constructor-arg value="Alpha"/>
+		<constructor-arg ref="address"/>
+		<constructor-arg ref="department"/>
+	</bean>
+
+</beans>
