@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- bean definitions here -->
+
+	<bean class="com.amazon.user.User" id="user1">
+		<property name="id" value="101"></property>
+		<property name="name" value="Alpha"></property>
+		<property name="type" value="Non-Prime"></property>
+		<property name="location" value="BLR"></property>
+	</bean>
+
+	<bean class="com.amazon.user.User" id="user2">
+		<property name="id" value="102"></property>
+		<property name="name" value="Beta"></property>
+		<property name="type" value="Prime"></property>
+		<property name="location" value="HYD"></property>
+	</bean>
+
+	<bean class="com.amazon.user.User" id="user3">
+		<constructor-arg value="103"/>
+		<constructor-arg value="Charlie"/>
+		<constructor-arg value="Prime"/>
+		<constructor-arg value="CHN"/>
+	</bean>
+	
+	<bean class="com.amazon.user.User" id="user4">
+		<constructor-arg index="0" value="104"/>
+		<constructor-arg index="1" value="Delta"/>
+		<constructor-arg index="2" value="Non-Prime"/>
+		<constructor-arg index="3" value="BBN"/>
+	</bean>
+
+
+	<bean class="com.amazon.user.User" id="user5">
+		<constructor-arg type="int" value="105"/>
+		<constructor-arg type="java.lang.String" value="Epsilon"/>
+		<constructor-arg type="java.lang.String" value="Prime"/>
+		<constructor-arg type="java.lang.String" value="KOL"/>
+	</bean>
+</beans>
