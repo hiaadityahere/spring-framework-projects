@@ -157,4 +157,4 @@ Department: engineering
 
 ## 👤 Author
 
-- **Aditya:** [linkedin.com/in/hiaadityahere](https://www.linkedin.com/in/hiaadityahere)
+- **Aaditya Kumar:** [linkedin.com/in/hiaadityahere](https://www.linkedin.com/in/hiaadityahere)
