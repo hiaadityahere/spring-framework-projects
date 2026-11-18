@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+
+	<!-- Creating Order bean using constructor injection -->
+	<bean id="order1" class="com.flipkart.finance.model.Order">
+		<constructor-arg index="0" value="111"/>
+		<constructor-arg index="1" value="123"/>
+	</bean>
+	
+	<!-- Creating OrderRepository bean -->
+	<bean id="orderRepository1" class="com.flipkart.finance.repository.OrderRepository"/>
+	
+	<!-- Creating OrderService bean and injecting dependencies -->
+	<bean id="orderService1" class="com.flipkart.finance.service.OrderService">
+		<constructor-arg index="0" ref="order1"/>
+		<constructor-arg index="1" ref="orderRepository1"/>
+	</bean>
+	
+</beans>
