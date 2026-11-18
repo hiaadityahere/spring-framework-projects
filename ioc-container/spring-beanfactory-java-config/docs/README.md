@@ -233,7 +233,7 @@ Order saved to database.
 1. Open a terminal and run:
    ```bash
    git clone https://github.com/hiaadityahere/spring-framework-projects.git
-   cd spring-framework-projects/spring-beanfactory-java-config
+   cd spring-framework-projects/ioc-container/spring-beanfactory-java-config
    ```
 2. Open Eclipse and go to **File >> Import >> Maven >> Existing Maven Projects >> Next**.
 3. Click **Browse**, select the `spring-beanfactory-java-config` folder inside the cloned repository, and click **Finish**.
